@@ -12,6 +12,11 @@ export component App() {
 		description: "Glassmorphism design",
 		url: "https://chandani-rathi.github.io/calculator/",
 		tech: ["Ripple", "TailwindCSS", "Motion"]
+		},{
+		title: "Ripple Shadcn UI",
+		description: "Ripple component of shadcn ui design",
+		url: "https://chandani-rathi.github.io/ripple-shadcn-ui/",
+		tech: ["Ripple", "TailwindCSS", "Shadcn UI"]
 		},
 	);
 	let $selectedProject = $projects.at(0);
@@ -60,9 +65,9 @@ export component App() {
         {/* iframe */}
         <div class="flex-1 p-4">
           <iframe
-            src={$selectedProject?.url}
+            $src={$selectedProject?.url}
             class="w-full h-full rounded-lg"
-            title={$selectedProject?.title}
+            $title={$selectedProject?.title}
           />
         </div>
       </div>
